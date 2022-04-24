@@ -1,4 +1,4 @@
-/*
+/*ExcludeSampleMatches.
     Copyright (C) 2018 Fernando Porrino Serrano.
     This software it's under the terms of the GNU Affero General Public License version 3.
     Please, refer to (https://github.com/FherStk/DocumentPlagiarismChecker/blob/master/LICENSE) for further licensing details.
@@ -35,7 +35,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
         /// </summary>
         /// <returns>The matching's results.</returns>
         public override ComparatorMatchingScore Run(){     
-            //Esta orden es para mejorar el rendimiento
+            //This order is meant to improving performance
             ExcludeSampleExactMatches(); 
             ExcludeSamplePartialMatches(this.Left, 0.70f);  //TODO: threshold value must be get from settings; check if can be removed
             ExcludeSamplePartialMatches(this.Right, 0.70f);  //TODO: threshold value must be get from settings; check if can be removed
@@ -61,7 +61,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
         }
 
         /// <summary>
-        /// Compara la muestra con el archivo dado y excluye los párrafos que producen una coincidencia falsa positiva entre la muestra y el documento.
+        /// Compares the sample with the given file and exclude the paragraphs that produces a false positive match between the sample an the document.
         /// </summary>
         private void ExcludeSampleExactMatches(){
             if(this.Sample == null) return;
@@ -149,7 +149,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
                 cr.AddMatch(cr.Child.Matching);
                 cr.DetailsData.Add(new object[]{paragraphs[0], paragraphs[1], cr.Child.Matching});
             }
-
+\\ hola
             return cr; 
         }
     }   
