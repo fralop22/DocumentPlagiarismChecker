@@ -107,12 +107,12 @@ namespace DocumentPlagiarismChecker
         /// <returns>A set of Comparator's object types</returns>
         private static IEnumerable<Type> GetComparatorTypes()
         {   
-            //TODO: Select plugins using a configuration file.
+            //TODO: Selecst plugins using a configuration file.sd
             return typeof(App).Assembly.GetTypes().Where(x => x.BaseType.Name.Contains("BaseComparator") && !x.FullName.Contains("_template")).ToList();
         }
 
         /// <summary>
-        /// Calculates the factorial for a number
+        /// Calculates the factorial for a numberdsa
         /// </summary>
         /// <param name="number">The number which factorial will be calculated.</param>
         /// <returns>The factorial for the given number</returns>
