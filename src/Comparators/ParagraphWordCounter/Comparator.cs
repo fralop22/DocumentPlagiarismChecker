@@ -12,6 +12,7 @@ using DocumentPlagiarismChecker.Core;
 using DocumentPlagiarismChecker.Scores;
 
 //julio benavent
+//modificacion 
 
 namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
 {
