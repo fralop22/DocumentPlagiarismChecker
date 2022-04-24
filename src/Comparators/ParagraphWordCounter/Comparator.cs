@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using DocumentPlagiarismChecker.Core;
 using DocumentPlagiarismChecker.Scores;
-
+//Johnnie
 namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
 {
     /// <summary>
