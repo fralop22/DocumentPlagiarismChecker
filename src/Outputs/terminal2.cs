@@ -4,7 +4,7 @@
     Please, refer to (https://github.com/FherStk/DocumentPlagiarismChecker/blob/master/LICENSE) for further licensing details.
  */
 
-//jalsdkfjas
+
 using System;
 using System.Linq;
 using ConsoleTables;
