@@ -126,7 +126,7 @@ namespace DocumentPlagiarismChecker
             return string.Format("{0}#{1}@{2}", comparator.ToString(), leftFilePath, rightFilePath);
         }
 
-         // Implement IDisposable.
+         // Implement IDisposable.d
         // Do not make this method virtual.
         // A derived class should not be able to override this method.
         public void Dispose()
