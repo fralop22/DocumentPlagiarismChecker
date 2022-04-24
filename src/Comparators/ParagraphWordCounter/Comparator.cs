@@ -11,6 +11,8 @@ using System.Text.RegularExpressions;
 using DocumentPlagiarismChecker.Core;
 using DocumentPlagiarismChecker.Scores;
 
+//julio benavent
+
 namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
 {
     /// <summary>
