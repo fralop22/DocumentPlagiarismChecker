@@ -1,4 +1,4 @@
-/*
+/*ExcludeSampleMatches.
     Copyright (C) 2018 Fernando Porrino Serrano.
     This software it's under the terms of the GNU Affero General Public License version 3.
     Please, refer to (https://github.com/FherStk/DocumentPlagiarismChecker/blob/master/LICENSE) for further licensing details.
@@ -11,17 +11,21 @@ using System.Text.RegularExpressions;
 using DocumentPlagiarismChecker.Core;
 using DocumentPlagiarismChecker.Scores;
 
+
 //julio benavent
 //modificacion 
+
+
+//Johnnie
 
 namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
 {
     /// <summary>
-    /// The Paragraph Word Counter Comparator reads a pair of files and counts how many words and how many times appear on each paragraph within a file, and 
+    /// The Paragraph Word Counter Comparator reads a pair of files and how many words and how many times appear on each paragraph within a file, and 
     /// then calculates how many of those appearences matches between documents. So, two documents with the same amount of the same paragraphs and 
-    /// words can be a copy with a high level of provability.
+    /// words can be a copy with a highs level of provability.asdadadadadasdasdas
     /// </summary>
-    /// <typeparam name="Document"></typeparam>
+    /// <typeparam name="Document"></typeparam>>
     internal class Comparator: Core.BaseComparator<Document>
     {  
         /// <summary>
@@ -38,7 +42,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
         /// </summary>
         /// <returns>The matching's results.</returns>
         public override ComparatorMatchingScore Run(){     
-            //Esta orden es para mejorar el rendimiento
+            //This order is meant to improving performance
             ExcludeSampleExactMatches(); 
             ExcludeSamplePartialMatches(this.Left, 0.70f);  //TODO: threshold value must be get from settings; check if can be removed
             ExcludeSamplePartialMatches(this.Right, 0.70f);  //TODO: threshold value must be get from settings; check if can be removed
@@ -64,7 +68,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
         }
 
         /// <summary>
-        /// Compara la muestra con el archivo dado y excluye los párrafos que producen una coincidencia falsa positiva entre la muestra y el documento.
+        /// Compares the sample with the given file and exclude the paragraphs that produces a false positive match between the sample an the document.
         /// </summary>
         private void ExcludeSampleExactMatches(){
             if(this.Sample == null) return;
@@ -152,8 +156,8 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
                 cr.AddMatch(cr.Child.Matching);
                 cr.DetailsData.Add(new object[]{paragraphs[0], paragraphs[1], cr.Child.Matching});
             }
-
             return cr; 
+    //HOLA
         }
     }   
 }

@@ -97,7 +97,7 @@ namespace DocumentPlagiarismChecker
         /// <param name="results">A set of file matching scores</param>
         public void WriteOutput(){
             //TODO: must be selected by settings
-            TerminalOutput t = new TerminalOutput(this.Settings);
+            TerminalCopia t = new TerminalCopia(this.Settings);
             t.Write(this.MatchingResults);
         }
 
@@ -107,7 +107,7 @@ namespace DocumentPlagiarismChecker
         /// <returns>A set of Comparator's object types</returns>
         private static IEnumerable<Type> GetComparatorTypes()
         {   
-            //TODO: Select plugins using a configuration file.
+            //TODO: Selecst plugins using a configuration file.sd
             return typeof(App).Assembly.GetTypes().Where(x => x.BaseType.Name.Contains("BaseComparator") && !x.FullName.Contains("_template")).ToList();
         }
 
@@ -126,7 +126,7 @@ namespace DocumentPlagiarismChecker
             return string.Format("{0}#{1}@{2}", comparator.ToString(), leftFilePath, rightFilePath);
         }
 
-         // Implement IDisposable.
+         // Implement IDisposable.d
         // Do not make this method virtual.
         // A derived class should not be able to override this method.
         public void Dispose()
