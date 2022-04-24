@@ -149,11 +149,6 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
                 cr.AddMatch(cr.Child.Matching);
                 cr.DetailsData.Add(new object[]{paragraphs[0], paragraphs[1], cr.Child.Matching});
             }
-<<<<<<< HEAD
-                //hola
-=======
-\\ Mierda de ED
->>>>>>> 8b51c66133c30b80d51f434aa137848dbb78f225
             return cr; 
         }
     }   
