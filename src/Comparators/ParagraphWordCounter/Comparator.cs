@@ -149,7 +149,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
                 cr.AddMatch(cr.Child.Matching);
                 cr.DetailsData.Add(new object[]{paragraphs[0], paragraphs[1], cr.Child.Matching});
             }
-\\ hola
+\\ Mierda de ED
             return cr; 
         }
     }   
