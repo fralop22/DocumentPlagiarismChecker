@@ -10,7 +10,14 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using DocumentPlagiarismChecker.Core;
 using DocumentPlagiarismChecker.Scores;
+
+
+//julio benavent
+//modificacion 
+
+
 //Johnnie
+
 namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
 {
     /// <summary>
