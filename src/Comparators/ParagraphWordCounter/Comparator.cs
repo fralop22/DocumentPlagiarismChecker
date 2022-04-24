@@ -150,7 +150,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
                 cr.DetailsData.Add(new object[]{paragraphs[0], paragraphs[1], cr.Child.Matching});
             }
             return cr; 
-    //hOLA MUNDO
+    //HOLA
         }
     }   
 }
