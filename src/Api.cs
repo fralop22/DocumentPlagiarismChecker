@@ -112,7 +112,7 @@ namespace DocumentPlagiarismChecker
         }
 
         /// <summary>
-        /// Calculates the factorial for a numberdsa
+        /// Calculates the factorial for a 
         /// </summary>
         /// <param name="number">The number which factorial will be calculated.</param>
         /// <returns>The factorial for the given number</returns>
