@@ -10,15 +10,15 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using DocumentPlagiarismChecker.Core;
 using DocumentPlagiarismChecker.Scores;
-
+//Johnnie
 namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
 {
     /// <summary>
-    /// The Paragraph Word Counter Comparator reads a pair of files and counts how many words and how many times appear on each paragraph within a file, and 
+    /// The Paragraph Word Counter Comparator reads a pair of files and how many words and how many times appear on each paragraph within a file, and 
     /// then calculates how many of those appearences matches between documents. So, two documents with the same amount of the same paragraphs and 
     /// words can be a copy with a highs level of provability.asdadadadadasdasdas
     /// </summary>
-    /// <typeparam name="Document"></typeparam>
+    /// <typeparam name="Document"></typeparam>>
     internal class Comparator: Core.BaseComparator<Document>
     {  
         /// <summary>
