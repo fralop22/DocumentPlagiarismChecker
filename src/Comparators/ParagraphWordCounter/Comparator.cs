@@ -150,7 +150,12 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
                 cr.DetailsData.Add(new object[]{paragraphs[0], paragraphs[1], cr.Child.Matching});
             }
             return cr; 
+<<<<<<< HEAD
     
         }//hola
+=======
+    //HOLA
+        }
+>>>>>>> 193dd09261467d051c1af066cc5e41d977375873
     }   
 }
